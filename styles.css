@@ -1,0 +1,216 @@
+/* -Font Calibri, Lucida Console, MS Reference Sans Serif- */
+/* -Old World of Darkness colours are charcoal and light grey- */
+/* -Old Mage: Purple and Gold- */
+/* -New Mage Turquoise and Silver- */
+/* -Old and New Vampire: Red and Black- */
+/* -Old and New Werewolf: Brown and Bronze- */
+/* -New Changeling: Emerald and Green- */
+/* -Bastet: Gold and Turquoise- */
+/* -Hunter: Black and Silver- */
+/* -- */
+/* -Consider Frames akin to the original paper sheets- */
+/* -- */
+/* - 720 min output- */
+/* -- */
+/* -- */
+/* -  20180709 1840: define DIV tag and retest- */
+/* -  20190119 2120: added borders to attributes and stats sections for ease of user reading */
+
+html {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+
+body {
+  background-color: rgb(99, 99, 99);
+}
+
+h1, h2, h3,
+p {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li input {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+}
+
+li select {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+}
+
+input[type="radio"] {
+  display: inline-block;
+    width: auto;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+
+select {
+  display: inline-block;
+}
+
+.attributes-wrapper, .abilities-wrapper, 
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 1%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.merit {
+  min-width: 265px;
+  margin: 0%;
+  justify-self: left;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 1px;
+  border-radius: 4px;
+  padding:1%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.merit input[type='list'] {
+  flex-grow: inherit;
+}
+
+.aspect {
+  width: 31%;
+  min-width: 185px;
+  margin: 0%;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 1px;
+  border-radius: 4px;
+  padding:1%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.health {
+  width: 10%;
+  min-width: 130px;
+  margin: 0%;
+  justify-self: right;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 1px;
+  border-radius: 4px;
+  padding:1%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.advantages-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.statsBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.attributeName {
+  align-content: flex-start;
+}
+
+.attributeValue {
+  align-content: right;
+}
+
+.attributes, .abilities,
+.description ul {
+  width: 30%;
+  margin: 0%;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 1px;
+  border-radius: 4px;
+  padding:1%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.pageWideSectional {
+  margin: 8px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 1%;
+  background: rgba(255, 255, 255, 0.5) url("/Images/TransparancyBackground/shattered-dark.png");
+}
+
+#meritList, #flawList {
+  max-width: fill-available;
+}
+
+.advantages {
+  width: 22%;
+  margin: 0;
+}
+
+.equipment {
+  width: 64%;
+  margin: 0;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 1%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.lines {
+  border-bottom-style: solid;
+  border-color: rgba(166, 166, 166, 0.75);
+  border-width: 1px;
+}
+
+.icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 15%;
+  margin: 0;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 1%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.willpower, .health, .powerAspect, .powerSupply,
+.humanity {
+  border: 1px;
+  text-align: center;
+}
+
+.inline {
+    display: inline-block;
+}
+
